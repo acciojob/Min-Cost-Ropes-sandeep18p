@@ -1,6 +1,5 @@
-function mincost(arr)
-{ 
-let totalCost = 0;
+function mincost(arr){
+ let totalCost = 0;
 
     // Sort the array of rope lengths in ascending order
     arr = arr.sort();
@@ -25,7 +24,6 @@ let totalCost = 0;
     }
 
     return totalCost;
-  
 }
 
 module.exports=mincost;
