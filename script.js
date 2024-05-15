@@ -20,7 +20,7 @@ function mincost(arr){
         arr = arr.sort();
     }
 
-    return totalCost+arr[0];
+    return totalCost;
 }
 
 module.exports=mincost;
