@@ -1,7 +1,7 @@
 function mincost(arr){
- let totalCost = 0;
+ let total = 0;
 
-    arr = arr.sort();
+     arr.sort((a, b) => a - b);
 
     while (arr.length > 1) {
        
@@ -11,16 +11,16 @@ function mincost(arr){
        
         const cost = rope1 + rope2;
 
-        totalCost += cost;
+        total += cost;
 
         
         arr.push(cost);
 
    
-        arr = arr.sort();
+         arr.sort((a, b) => a - b);
     }
 
-    return totalCost;
+    return total;
 }
 
 module.exports=mincost;
